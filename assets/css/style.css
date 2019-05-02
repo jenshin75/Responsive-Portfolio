@@ -53,8 +53,10 @@ Experiment with deleting lines of code from the CSS to see how it affects the we
   padding: 25px;
   margin: 20px 150px;
   /* border: 5px solid purple; */
-  color: #777777;
-  font-family: Arial, Helvetica, sans-serif;
+  /* color: #777777; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  color: #4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .footer {
@@ -117,10 +119,10 @@ Experiment with deleting lines of code from the CSS to see how it affects the we
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.aboutMe {
+/* .aboutMe {
   color: #4aaaa5;
   font-family: Georgia, 'Times New Roman', Times, serif;
-}
+} */
 
 .contactMe {
   color: #4aaaa5;
@@ -149,7 +151,9 @@ Experiment with deleting lines of code from the CSS to see how it affects the we
   padding: 25px;
   margin: 10px 150px;
   color: #777777;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  color: #4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .blueLine {
@@ -174,17 +178,36 @@ Experiment with deleting lines of code from the CSS to see how it affects the we
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* * {
-  box-sizing: border-box;
-}  */
-
 /*The background color will be #ccc at browser widths above 768px*/
 
-body {
-  font-size: 18px;
-  line-height: 27px;
-  background-color: #ccc; 
+.clearfix {
+  clear: both;
 }
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* .container {
+  width: 100%
+  max-width: 1100px;
+margin-left: auto;
+margin-righ: auto;
+} */
+
+.header {
+  /* height: 100px; */
+  /* background-color: blue; */
+  margin-left: auto;
+margin-right: auto;
+  }
+
+/* 
+  font-size: 18px;
+  line-height: 27px; */
+  /* background-color: #ccc;  
+/* }  
 
 /*The width of the wrapper will be 1024px at browser widths above 768px*/
 
@@ -201,7 +224,6 @@ background: #fff;
 }
 
 #sidebar { 
-  Positioning
   float: right;
   background: #eee;
 } 
@@ -247,12 +269,18 @@ background: #fff;
 }
 
 @media screen and (max-width: 640px) {
+
+  #header {
+    position: static;
+    border: 3px solid purple;
+  }
+
   body {
     background-color: fuchsia;
   }
 
   .wrapper {
-    width: 100%;
+    width: 60%;
     padding: 20px;
   }
 
