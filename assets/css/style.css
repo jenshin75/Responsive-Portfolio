@@ -6,6 +6,12 @@ Flip between this CSS file and the HTML to see how things line up.
 
 Experiment with deleting lines of code from the CSS to see how it affects the webpage when you refresh in the browser.*/
 
+
+#pic_image {
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
 #pic_image {
   height: 150px;
   width: 150px;
@@ -270,26 +276,15 @@ background: #fff;
 
 @media screen and (max-width: 640px) {
 
-  #header {
-    position: static;
+  .header {
+    position: relative;
     border: 3px solid purple;
+    width: 100%;
+    position: relative;
   }
 
   body {
     background-color: fuchsia;
   }
-
-  .wrapper {
-    width: 60%;
-    padding: 20px;
-  }
-
-  #main-content,
-  #sidebar {
-    width: 100%;
-  }
-
-  #sidebar {
-    margin-top: 40px;
-  }
 }
+
