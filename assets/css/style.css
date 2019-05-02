@@ -145,10 +145,9 @@ Experiment with deleting lines of code from the CSS to see how it affects the we
 .containerMM {
   background-color: #ffffff;
   width: 960px;
-  height: 300px;
+  height: 450px;
   padding: 25px;
-  /* margin: 10px 150px; */
-  margin: 10px 50px auto;
+  margin: 20px 150px;
   color: #777777;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -175,20 +174,94 @@ Experiment with deleting lines of code from the CSS to see how it affects the we
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-@media only screen and (max-width: 980px) {
+/* * {
+  box-sizing: border-box;
+}  */
+
+/*The background color will be #ccc at browser widths above 768px*/
+
+body {
+  font-size: 18px;
+  line-height: 27px;
+  background-color: #ccc; 
+}
+
+/*The width of the wrapper will be 1024px at browser widths above 768px*/
+
+.wrapper {
+  width: 1024px;
+  margin: 40px auto;
+}
+
+.main-content {
+  width: 960px;
+  padding: 30px;
+  float: left;
+background: #fff;
+}
+
+#sidebar { 
+  Positioning
+  float: right;
+  background: #eee;
+} 
+
+@media screen and (max-width: 980px) {
   body {
     background-color: green;
   }
-}
+  
+  .wrapper {
+    width: 100%;
+    padding: 20px;
+  }
 
-@media only screen and (max-width: 768px) {
-  body {
-    background-color: yellow;
+  .main-content {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 640px) {
   body {
     background-color: fuchsia;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
   }
 }
