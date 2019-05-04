@@ -1,69 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
-  <title>Assignment #1</title>
+  <title>About | Your Name</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- This line is money! It points your HTML to the CSS file. -->
-
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
-  <link rel="stylesheet" type="text/css" href="../Responsive-Portfolio/assets/css/style.css">
-  <!-- <link rel="stylesheet" type="text/css" href="../Basic-Portfolio/assets/css/reset.css"> -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/reet.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
-<style>
-  #pic_image {
-    height: 150px;
-    width: 150px;
-    margin-right: 15px;
-    margin-top: 10px;
-  }
-</style>
-
 <body>
-  <header class="header">
 
-    <div class="containerTL">
-      <h3>Jenny Shin</h3>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Jenny Shin</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-
-    <div class="containerTR float_right">
-      <a href="../Responsive-Portfolio/contact.html">Contact</a>
-    </div>
-
-    <div class="containerTR float_right">
-      <a href="../Responsive-Portfolio/portfolio.html">Portfolio</a>
-    </div>
-
-    <div class="containerTR float_right">
-      <a href="../Responsive-Portfolio/index.html">About</a>
-    </div>
-
   </header>
 
-  <div class="containerM">
-    <div class="containerMM">
-      <!-- <div class="aboutMe"> -->
-        <h3>About Me</h3>
-        <hr>
-        <img id="pic_image" src="../Responsive-Portfolio/assets/images/daisy.jpg" class="float_left" alt="Your Name">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu justo arcu. Etiam blandit nunc id arcu
-          mattis posuere. Maecenas eget pharetra lectus, a lacinia dui. Pellentesque ultrices risus id quam tincidunt,
-          et auctor risus tincidunt. Suspendisse sit amet ullamcorper est, id semper massa. Duis mi erat, auctor at
-          sem id, maximus blandit lorem. Duis nunc eros, consequat non nibh porttitor, sagittis elementum diam.</p>
-        <p>Curabitur in magna vel sapien molestie tincidunt in vel diam. Phasellus sit amet tortor ac ligula pharetra
-          elementum nec vel ante. Duis ac dui quis urna sollicitudin hendrerit. Suspendisse magna diam, convallis et
-          nisl quis, rutrum ultrices leo.</p>
-      </div>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>About Me</h1>
+
+      <img src="./assets/images/daisy.jpg" height=200px width=200px class="auth-image" alt="Jenny Shin">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
+
+      <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
+
+      <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+    </section>
+  
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 
     </div>
-  </div>
-
-  </div>
-
-  <div class="blueLine"></div>
-  <div class="containerB"><h6>Copyright @ 2019</h6>/div>
-
+  </footer>
 </body>
 
 </html>
