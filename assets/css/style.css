@@ -206,59 +206,113 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 980px) {
+
 #main-container {
-    /* margin-left: 20px; */
-    /* margin: 10px; */
-    /* background-color: yellow; */
+float:left;
+margin-left: 50px;
 }
+
 #logo {
-    padding: 15px 10px;
-    text-align: left;
-}
-#masthead {
-    width: 100%;
-    position: absolute;
-}
-.main-section {
-  height: 50%
-}
-}
-
-@media screen and (max-width: 640px) {
-  /* .column {
-    width: 100%;
-  } */
-
-.main-section {
-  width: 600px;
-  height: 900px;
+  margin-left: 25px;
+  padding: 10px 0 0 30px;
+  text-align: left;
 }
 
 .auth-image {
-height: 50%;
-width: 95%;
-
+width: 150px;
+height: 150px;
 }
+
+img {
+  height: 150px;
+  width: 90px;
+}
+
+.main-section {
+  width: 650px;
+  height: 700px;
+  font-size: small;
+  line-height: 1.8;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+
+  #main-container {
+    float:left;
+    margin-left: 30px;
+    }
+
+  .auth-image {
+    width: 300px;
+    height: 50%;
+            }
+
+    #main-content {
+      font-size: 30%;
+      display: 50%;
+    }
+  #masthead {
+  /* position: static; */
+  width: 100%;
+  }
+
+  #logo { 
+           margin-left: 35px;
+        padding: 10px 0 0 30px;
+        text-align: left;
+      }
+    
+  .main-section {
+    width: 725px;
+    height: 500px;
+    font-size: small;
+    line-height: 1.8;
+  }
+  
+  nav {
+    margin-right: 30px;
+        /* text-align: center; */
+  }
+
+@media screen and (max-width: 640px) {
+
+.main-section {
+  width: 575px;
+  height: 1250px;
+  margin-top: 10px;
+  font-size: medium;
+  display: block;
+}
+
+.auth-image {
+height: 40%;
+width: 500px;
+padding: 20px;
+}
+
 #masthead {
-  position: relative;
+  /* position: static; */
 
 }
 #main-container {
-/* padding: 20px; */
-    width: 600px;
-  height: 700px;
-/* 
-    background-color: orange; */
+padding: 0px;
+  width: 600px;
+  height: 1300px;
   }
+
 #logo {
+  position: static;
+  margin-left: 0px;
   width: 640px;
-  padding: 15px 10px;
   text-align: center;
 }
-  nav {
+
+nav {
+  position: static;
 text-align: center;
-     width: 640px; 
-     /* width: 33%; */
+     width: 640px;
+  margin-right: 10px;
     }
   }
-  
