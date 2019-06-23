@@ -1,12 +1,16 @@
-<!-- # Basic-Portfolio
+Overview - 
 
-This page is reserved for instructions.
+I created a train schedule application that incorporates Firebase to host arrival and departure data. My app will retrieve and manipulate this information with Moment.js. This website will provide up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.
 
-Contact HTML - When you click submit, you will get a message stating "Your message has been sent.".
- 
-Reset CSS - This cascading style sheet will reset all the styling of all Index elements to a consistent baseline.
+Setup - 
 
-Portfolio - When you click on the first image, it will take you to my first Scratch Game #1 from Pre-Work.
-Likewise, when you click on the second image, it will take you to my second Scratch Game #2 from Pre-Work.
+I'm using Firebase to store data, GitHub to backup your project, and GitHub Pages to host your finished site.
 
- -->
+Instructions -
+
+When adding trains, System Administrators should be able to submit/add the following:
+1) Train Name
+2) Destination 
+3) First Train Time -- in military time
+4) Frequency -- in minutes
+5) Calculate when the next train will arrive.  This is relative to the current time.
